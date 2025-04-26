@@ -1,0 +1,12 @@
+.home{
+    background-image: url(../imgs/hero-bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.home h1{
+    color: #fff;
+    font-size: 70px;
+
+}

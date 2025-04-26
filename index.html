@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
+    <nav class="navbar navbar-expand-md  py-2  position-fixed w-100 d-flex" data-bs-theme="dark" >
+        <div class="container d-flex justify-content-around">
+            <div class="me-auto">          
+                <a class="navbar-brand" href="#">DevFolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline  align-self-end">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#home">Home</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a class="nav-link "  href="#about">About</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a class="nav-link "  href="#service">Services</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a class="nav-link "  href="#work">Work</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a class="nav-link "  href="#blog">Blog</a>
+                  </li>
     
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link "  href="#contact">Contact</a>
+                  </li>
+    
+                </ul>
+              </div>
+        </div>
+
+      </nav>
+
+      <div class="home vh-100  text-white d-flex justify-content-center align-items-center flex-column " id="home">
+        <h1 class=" ">I am Morgan Freeman</h1>
+        <span>developer</span>
+      </div>
+
+      <div class="about" id="about">
+        <div class="container">
+            <div class="setion1"></div>
+            <div class="section2"></div>
+        </div>
+      </div>
+      <script src="./bootstrap/bootstrap.bundle.js"></script>
 </body>
 </html>
