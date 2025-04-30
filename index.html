@@ -1,72 +1,1364 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bootstrap</title>
-    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./icons/all.min.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md py-2 position-fixed w-100 bg-black z-3"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">DevFolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-</head>
-<body>
-    <nav class="navbar navbar-expand-md  py-2  position-fixed w-100 d-flex" data-bs-theme="dark" >
-        <div class="container d-flex justify-content-around">
-            <div class="me-auto">          
-                <a class="navbar-brand" href="#">DevFolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline  align-self-end">
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#home">Home</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a class="nav-link "  href="#about">About</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a class="nav-link "  href="#service">Services</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a class="nav-link "  href="#work">Work</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a class="nav-link "  href="#blog">Blog</a>
-                  </li>
-    
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link "  href="#contact">Contact</a>
-                  </li>
-    
-                </ul>
+        <div
+          class="collapse navbar-collapse flex-grow-0"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="home vh-100 text-white d-flex justify-content-center align-items-center flex-column"
+      id="home"
+    >
+      <h1 class=" ">I am Morgan Freeman</h1>
+      <span>developer</span>
+    </div>
+
+    <div class="about mt-5" id="about">
+      <div class="container shadow">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="section1 p-5">
+            <div class="top d-flex gap-4">
+              <img
+                class="w-50"
+                src="./imgs/testimonial-2.jpg"
+                alt="elegant person"
+              />
+              <div>
+                <p><span class="fw-bold">name:</span> Hamza Omar</p>
+                <p><span class="fw-bold">profile:</span> fullstack web dev</p>
+                <p><span class="fw-bold">email:</span> Contacft@example</p>
+                <p><span class="fw-bold">phone:</span> 0120154841845</p>
               </div>
+            </div>
+
+            <div class="bottom pt-5">
+              <div class="labels d-flex justify-content-between">
+                <span>html</span>
+                <span>100%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 100%"></div>
+              </div>
+              <div class="labels d-flex justify-content-between">
+                <span>css</span>
+                <span>90%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+              <div class="labels d-flex justify-content-between">
+                <span>javascript</span>
+                <span>75%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+              <div class="labels d-flex justify-content-between">
+                <span>photoshop</span>
+                <span>55%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 55%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="section2">
+            <h2 class="pt-3 heading2">About me</h2>
+            <p class="fs-5 pt-3">
+              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Praesent sapien massa, convallis a pellentesque nec, egestas non
+              nisi. Nulla porttitor accumsan tincidunt.
+            </p>
+            <p class="fs-5">
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum
+              ac diam sit amet quam vehicula elementum sed sit amet dui.
+              porttitor at sem.
+            </p>
+            <p class="fs-5">
+              Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut
+              lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            </p>
+          </div>
         </div>
-
-      </nav>
-
-      <div class="home vh-100  text-white d-flex justify-content-center align-items-center flex-column " id="home">
-        <h1 class=" ">I am Morgan Freeman</h1>
-        <span>developer</span>
       </div>
-
-      <div class="about" id="about">
+    </div>
+    <div class="resume">
+      <div class="header-section text-center">
+        <h2 class="pt-4 heading">Resume</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="body-section">
         <div class="container">
-            <div class="setion1"></div>
-            <div class="section2"></div>
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="right">
+              <div class="card border-0">
+                <h3 class="fs-2">summary</h3>
+                <div class="inner1 position-relative">
+                  <h4 class="text-secondary fs-5">BRANDON JOHNSON</h4>
+                  <p class="fst-italic">
+                    Innovative and deadline-driven Graphic Designer with 3+
+                    years of experience designing and developing user-centered
+                    digital/print marketing material from initial concept to
+                    final, polished deliverable.
+                  </p>
+                  <ul>
+                    <li>Portland par 127,Orlando, FL</li>
+                    <li>(123) 456-7891</li>
+                    <li>alice.barkley@example.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card border-0">
+                <h3>education</h3>
+                <div class="inner2 position-relative">
+                  <h4 class="text-secondary fs-5">
+                    MASTER OF FINE ARTS & GRAPHIC DESIGN
+                  </h4>
+                  <span>2015 - 2016</span>
+                  <p class="fst-italic">
+                    Rochester Institute of Technology, Rochester,
+                  </p>
+                  <p>
+                    Qui deserunt veniam. Et sed aliquam labore tempore sed
+                    quisquam iusto autem sit. Ea vero voluptatum qui ut
+                    dignissimos deleniti nerada porti sand marken
+                  </p>
+                </div>
+                <div class="inner2 position-relative">
+                  <h4 class="text-secondary fs-5">
+                    MASTER OF FINE ARTS & GRAPHIC DESIGN
+                  </h4>
+                  <span>2015 - 2016</span>
+                  <p class="fst-italic">
+                    Rochester Institute of Technology, Rochester,
+                  </p>
+                  <p>
+                    Qui deserunt veniam. Et sed aliquam labore tempore sed
+                    quisquam iusto autem sit. Ea vero voluptatum qui ut
+                    dignissimos deleniti nerada porti sand marken
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="left">
+              <div class="card border-0">
+                <h3 class="fs-2">profesional experiences</h3>
+                <div class="inner3 position-relative">
+                  <h4 class="text-secondary fs-5">
+                    SENIOR GRAPHIC DESIGN SPECIALIST
+                  </h4>
+                  <span>2015 - Present</span>
+                  <p>Experion, new york ,NY</p>
+                  <ul>
+                    <li>
+                      Lead in the design, development, and implementation of the
+                      graphic, layout, and production communication materials
+                    </li>
+                    <li>
+                      Delegate tasks to the 7 members of the design team and
+                      provide counsel on all aspects of the project.
+                    </li>
+                    <li>
+                      Supervise the assessment of all graphic materials in order
+                      to ensure quality and accuracy of the design
+                    </li>
+                    <li>
+                      Oversee the efficient use of production project budgets
+                      ranging from $2,000 - $25,000
+                    </li>
+                  </ul>
+                </div>
+                <div class="inner3 position-relative">
+                  <h4 class="text-secondary fs-5">
+                    SENIOR GRAPHIC DESIGN SPECIALIST
+                  </h4>
+                  <span>2015 - Present</span>
+                  <p>Experion, new york ,NY</p>
+                  <ul>
+                    <li>
+                      Lead in the design, development, and implementation of the
+                      graphic, layout, and production communication materials
+                    </li>
+                    <li>
+                      Delegate tasks to the 7 members of the design team and
+                      provide counsel on all aspects of the project.
+                    </li>
+                    <li>
+                      Supervise the assessment of all graphic materials in order
+                      to ensure quality and accuracy of the design
+                    </li>
+                    <li>
+                      Oversee the efficient use of production project budgets
+                      ranging from $2,000 - $25,000
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <script src="./bootstrap/bootstrap.bundle.js"></script>
-</body>
+    </div>
+    <div class="services" id="service">
+      <div class="header-section text-center">
+        <h2 class="pt-4 heading">Services</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col">
+            <div class="card mb-5 py-5 border-0 shadow rounded-4">
+              <div
+                class="card-img py-4 bg-primary text-center rounded-circle ms-3"
+                style="width: 4rem; height: 4rem"
+              >
+                <a href="#">
+                  <i class="fa-solid fa-wave-square fs-4 text-white"></i>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ip. Nesciunt sapiente fuga aperiam, natus quos
+                  consequuntur repudiandae vero harum autem, tenetur ullam quae.
+                  Necessitatibus!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-5 py-5 border-0 shadow rounded-4">
+              <div
+                class="card-img py-4 bg-primary text-center rounded-circle ms-3"
+                style="width: 4rem; height: 4rem"
+              >
+                <a href="#">
+                  <i class="fa-solid fa-wave-square fs-4 text-white"></i>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ip. Nesciunt sapiente fuga aperiam, natus quos
+                  consequuntur repudiandae vero harum autem, tenetur ullam quae.
+                  Necessitatibus!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-5 py-5 border-0 shadow rounded-4">
+              <div
+                class="card-img py-4 bg-primary text-center rounded-circle ms-3"
+                style="width: 4rem; height: 4rem"
+              >
+                <a href="#">
+                  <i class="fa-solid fa-wave-square fs-4 text-white"></i>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ip. Nesciunt sapiente fuga aperiam, natus quos
+                  consequuntur repudiandae vero harum autem, tenetur ullam quae.
+                  Necessitatibus!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-5 py-5 border-0 shadow rounded-4">
+              <div
+                class="card-img py-4 bg-primary text-center rounded-circle ms-3"
+                style="width: 4rem; height: 4rem"
+              >
+                <a href="#">
+                  <i class="fa-solid fa-wave-square fs-4 text-white"></i>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ip. Nesciunt sapiente fuga aperiam, natus quos
+                  consequuntur repudiandae vero harum autem, tenetur ullam quae.
+                  Necessitatibus!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-5 py-5 border-0 shadow rounded-4">
+              <div
+                class="card-img py-4 bg-primary text-center rounded-circle ms-3"
+                style="width: 4rem; height: 4rem"
+              >
+                <a href="#">
+                  <i class="fa-solid fa-wave-square fs-4 text-white"></i>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ip. Nesciunt sapiente fuga aperiam, natus quos
+                  consequuntur repudiandae vero harum autem, tenetur ullam quae.
+                  Necessitatibus!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-5 py-5 border-0 shadow rounded-4">
+              <div
+                class="card-img py-4 bg-primary text-center rounded-circle ms-3"
+                style="width: 4rem; height: 4rem"
+              >
+                <a href="#">
+                  <i class="fa-solid fa-wave-square fs-4 text-white"></i>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ip. Nesciunt sapiente fuga aperiam, natus quos
+                  consequuntur repudiandae vero harum autem, tenetur ullam quae.
+                  Necessitatibus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="counter d-flex justify-content-evenly p-5 my-5">
+      <div class="element p-5 text-white">
+        <h2 class="fs-1 fw-bold fw-bold">232</h2>
+        <span class="fs-4"> clients</span>
+      </div>
+      <div class="element p-5 text-white">
+        <h5 class="fs-1 fw-bold">521</h5>
+        <span class="fs-4"> projects</span>
+      </div>
+      <div class="element p-5 text-white">
+        <h5 class="fs-1 fw-bold">1528</h5>
+        <span class="fs-4"> hours of support</span>
+      </div>
+      <div class="element p-5 text-white">
+        <h5 class="fs-1 fw-bold">32</h5>
+        <span class="fs-4"> awards</span>
+      </div>
+    </div>
+
+    <div class="portfolio" id="work">
+      <div class="header-section text-center">
+        <h2 class="pt-4 heading">Portfolio</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="container">
+        <ul
+          class="nav nav-pills mb-3 justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-all-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+              role="tab"
+              aria-controls="pills-all"
+              aria-selected="true"
+            >
+              all
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-app-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-app"
+              type="button"
+              role="tab"
+              aria-controls="pills-app"
+              aria-selected="false"
+            >
+              App
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-product-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-product"
+              type="button"
+              role="tab"
+              aria-controls="pills-product"
+              aria-selected="false"
+            >
+              Product
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-branding-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-branding"
+              type="button"
+              role="tab"
+              aria-controls="pills-branding"
+              aria-selected="false"
+            >
+              Branding
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-books-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-books"
+              type="button"
+              role="tab"
+              aria-controls="pills-books"
+              aria-selected="false"
+            >
+              Books
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-all"
+            role="tabpanel"
+            aria-labelledby="pills-all-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-3.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-1.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-2.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-4.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-5.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-6.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-2.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-2.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-3.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-app"
+            role="tabpanel"
+            aria-labelledby="pills-app-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-3.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-1.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-2.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-product"
+            role="tabpanel"
+            aria-labelledby="pills-product-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-3.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-1.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-2.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-branding"
+            role="tabpanel"
+            aria-labelledby="pills-branding-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-3.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-1.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-2.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-books"
+            role="tabpanel"
+            aria-labelledby="pills-books-tab"
+            tabindex="0"
+          >
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-3.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-1.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card position-relative overflow-hidden">
+                  <img
+                    src="./imgs/work-2.jpg"
+                    class="card-img-top w-100"
+                    alt="..."
+                  />
+                  <div class="card-caption">
+                    <h4>App 1</h4>
+                    <div class="inner d-flex p-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      <div class="icons d-flex">
+                        <a href="#"
+                          ><i class="fa-solid fa-eye text-black fs-3"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa-solid fa-link text-black fs-3"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <div class="header-section text-center">
+        <h2 class="pt-4 heading">Pricing</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <ul>
+                <li class="d-flex justify-content-between align-items-center">
+                  <h3>portrait Photography</h3>
+                  <span class="text-primary">$160.00</span>
+                </li>
+                <hr style="border-top: 1px dashed #000" />
+                <li class="d-flex justify-content-between align-items-center">
+                  <h3>portrait Photography</h3>
+                  <span class="text-primary">$160.00</span>
+                </li>
+                <hr style="border-top: 1px dashed #000" />
+                <li class="d-flex justify-content-between align-items-center">
+                  <h3>portrait Photography</h3>
+                  <span class="text-primary">$160.00</span>
+                </li>
+                <hr style="border-top: 1px dashed #000" />
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="d-flex justify-content-between align-items-center">
+                  <h3>portrait Photography</h3>
+                  <span class="text-primary">$160.00</span>
+                </li>
+                <hr style="border-top: 1px dashed #000" />
+                <li class="d-flex justify-content-between align-items-center">
+                  <h3>portrait Photography</h3>
+                  <span class="text-primary">$160.00</span>
+                </li>
+                <hr style="border-top: 1px dashed #000" />
+                <li class="d-flex justify-content-between align-items-center">
+                  <h3>portrait Photography</h3>
+                  <span class="text-primary">$160.00</span>
+                </li>
+                <hr style="border-top: 1px dashed #000" />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="questions my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="inner my-4 p-2">
+                <h3>frequantly Asked <span class="fw-bold">Questions</span></h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Temporibus ipsum consectetur quo ad. Nemo, distinctio dolorem ea
+                  corrupti dolores numquam impedit neque eaque architecto, maiores
+                  repellat provident totam perferendis soluta?
+                </p>
+            </div>
+
+          </div>
+          <div class=" col-12 col-md-8">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item my-4  shadow rounded-0">
+                <h2 class="accordion-header ">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <p class="fw-bold">
+                      <span class="text-primary">1.</span> Lorem ipsum dolor sit
+                      amet, consectetur adipisicing.
+                    </p>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-4 border-0 shadow">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <p class="fw-bold">
+                      <span class="text-primary">2.</span> Lorem ipsum dolor sit
+                      amet, consectetur adipisicing.
+                    </p>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-4 border-0 shadow">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <p class="fw-bold">
+                      <span class="text-primary">3.</span> Lorem ipsum dolor sit
+                      amet, consectetur adipisicing.
+                    </p>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-4 border-0 shadow">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour"
+                    aria-expanded="false"
+                    aria-controls="collapsefour"
+                  >
+                    <p class="fw-bold">
+                      <span class="text-primary">4.</span> Lorem ipsum dolor sit
+                      amet, consectetur adipisicing.
+                    </p>
+                  </button>
+                </h2>
+                <div
+                  id="collapsefour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-4 border-0 shadow">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsefive"
+                    aria-expanded="false"
+                    aria-controls="collapsefive"
+                  >
+                    <p class="fw-bold">
+                      <span class="text-primary">5.</span> Lorem ipsum dolor sit
+                      amet, consectetur adipisicing.
+                    </p>
+                  </button>
+                </h2>
+                <div
+                  id="collapsefive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ratings">
+        <div class="container">     
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active  d-flex  align-items-center flex-column">
+                <img src="./imgs/testimonial-2.jpg" class="d-block  rounded-circle  " alt="...">
+                <div class="carousel-caption position-static ">
+                  <h5>First slide label</h5>
+                  <span>designer</span>
+                  <div class=" stars text-warning">
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star-half-alt"> </i>
+                  </div>
+                  
+                  <p class="pb-5">Lorem ipsum dolor sit amet, non omnis, sapiente quo exercitationem deleniti impedit quas quibusdam explicabo quam voluptatum illo reiciendis expedita molestias ipsum fugiat? Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+    <script src="./bootstrap/bootstrap.bundle.js"></script>
+    <script src="./icons/all.min.js"></script>
+  </body>
 </html>
