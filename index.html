@@ -10,11 +10,8 @@
 
   </head>
 
-  <body>
-    <nav
-      class="navbar navbar-expand-md py-2 position-fixed w-100 bg-black z-3"
-      data-bs-theme="dark"
-    >
+  <body class="overflow-hidden">
+    <nav class="navbar navbar-expand-md py-2 position-fixed w-100 bg-black z-3 top-0 "data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand" href="#">DevFolio</a>
         <button
@@ -30,10 +27,9 @@
         </button>
 
         <div
-          class="collapse navbar-collapse flex-grow-0"
-          id="navbarSupportedContent"
+          class="collapse navbar-collapse flex-grow-0"id="navbarSupportedContent"
         >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
+          <ul class="navbar-nav  mb-2 mb-lg-0 nav-underline">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
@@ -80,7 +76,7 @@
     </nav>
 
     <div class="home vh-100 text-white d-flex justify-content-center align-items-center flex-column"id="home">
-      <h1 class=" ">I am Morgan Freeman</h1>
+      <h1 class=" text-center">I am Morgan Freeman</h1>
       <div class=" text-center">
         <div class="cssanimation typing fs-3">developer</div>
       </div>
@@ -435,22 +431,25 @@
         </div>
       </div>
     </div>
-    <div class="counter d-flex justify-content-evenly p-5 my-5">
-      <div class="element p-5 text-white">
-        <h2 class="fs-1 fw-bold fw-bold">232</h2>
-        <span class="fs-4"> clients</span>
-      </div>
-      <div class="element p-5 text-white">
-        <h5 class="fs-1 fw-bold">521</h5>
-        <span class="fs-4"> projects</span>
-      </div>
-      <div class="element p-5 text-white">
-        <h5 class="fs-1 fw-bold">1528</h5>
-        <span class="fs-4"> hours of support</span>
-      </div>
-      <div class="element p-5 text-white">
-        <h5 class="fs-1 fw-bold">32</h5>
-        <span class="fs-4"> awards</span>
+    <div class="counter p-5 my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center">
+            <div class="col p-5 text-white">
+                <h2 class="fs-1 fw-bold fw-bold">232</h2>
+                <span class="fs-4"> clients</span>
+              </div>
+              <div class="col p-5 text-white">
+                <h5 class="fs-1 fw-bold">521</h5>
+                <span class="fs-4"> projects</span>
+              </div>
+              <div class="col p-5 text-white">
+                <h5 class="fs-1 fw-bold">1528</h5>
+                <span class="fs-4"> hours of support</span>
+              </div>
+              <div class="col p-5 text-white">
+                <h5 class="fs-1 fw-bold">32</h5>
+                <span class="fs-4"> awards</span>
+        </div>
+
       </div>
     </div>
 
@@ -1541,7 +1540,7 @@
                     <div class="col ">
                         <div class="inner d-flex gap-3 align-items-center p-2 ">
                             <div class="icons p-3 rounded-circle text-center border border-primary-subtle m-4">
-                                <i class=" icon fa-solid fa-location  fs-3 "></i>
+                                <i class=" icon fa-solid fa-location  fs-3  "></i>
                             </div>
                             <div class="content">
                                 <h4>address</h4>
